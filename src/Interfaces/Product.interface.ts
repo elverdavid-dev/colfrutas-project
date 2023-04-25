@@ -7,5 +7,5 @@ export interface ProductInterface {
  tipos_de_empaque: string;
  disponibilidad: string;
  image: string;
- características_generales: string;
+ Descripcion: string;
 }
