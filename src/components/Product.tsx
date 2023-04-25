@@ -1,8 +1,11 @@
 import { InfoProduct } from "@utils/file";
 const Product = () => {
+  const loading = () =>{
+    return <h2>loading</h2>
+  }
  return (
   <>
-   <div className="mt-40 grid grid-cols-3">
+   <div className="mt-40 grid grid-cols-3 gap-x-5 gap-y-7">
     {InfoProduct.map(
      (
       {
@@ -19,7 +22,7 @@ const Product = () => {
       i
      ) => (
       <div key={i} className="">
-        <img src={image} alt="" width={450} height={450}  className="col-span-2"/>
+        <img src={image} alt="" width={450} height={200} onLoad={loading}  className="col-span-2 w-auto h-[450px] "/>
        <div>
        <h2>{producto} </h2>
        <h2>{familia} </h2>
