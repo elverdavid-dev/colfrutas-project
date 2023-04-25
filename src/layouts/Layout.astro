@@ -1,0 +1,50 @@
+---
+import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
+import "../styles/globalStyles.css";
+export interface Props {
+ title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- font nunito -->
+  <link
+   href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+   rel="stylesheet"
+  />
+  <!-- font berkshire -->
+  <link
+   href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+   rel="stylesheet"
+  />
+  <!-- font kanit -->
+  <link
+   href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap"
+   rel="stylesheet"
+  />
+  <!-- font lora -->
+  <link
+   href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap"
+   rel="stylesheet"
+  />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <meta name="generator" content={Astro.generator} />
+  <meta
+   name="description"
+   content="colfrutas | Somos una compañía dedicada a la exportación de frutas frescas colombianas bajo el principio de la calidad. Somos esfuerzo, resiliencia y amor por el campo."
+  />
+  <title>{title}</title>
+ </head>
+ <body>
+  <Navbar client:load />
+  <slot />
+  <Footer client:load />
+ </body>
+</html>

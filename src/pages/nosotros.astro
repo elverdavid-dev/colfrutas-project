@@ -1,0 +1,50 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Card from "@components/nosotros/Card";
+---
+
+<Layout title="Colfrutas | Sobre Nosotros">
+ <main class="lg:mx-16 md:mx-20 mx-4">
+  <h1 class="font-lora text-5xl text-emerald-600 text-center mt-16">¿Quiénes somos?</h1>
+
+  <div class="font-nunito text-center flex lg:flex-row flex-col lg:justify-between items-start lg:text-xl text-lg text-slate-700 mt-16">
+  <section class="lg:w-1/2 leading-8 lg:mb-0 mb-5">
+    <p class="mb-3">
+        Somos una compañía exportadora y comercializadora especializada en el mercado agro de frutas
+        exóticas y tropicales. Trabajamos para mejorar la calidad de vida de nuestros colaboradores,
+        productores y consumidores, ofreciendo nuevas alternativas de comercialización y distribución.
+       </p>
+       <p>
+        Conectamos diferentes regiones del país generando negocios de alto impacto. Comprometidos en
+        mejorar cada día la calidad de nuestros productos para llegar a los mercados internacionales.
+       </p>
+  </section>
+  <img src="./cajas.jpeg" alt="" width="400" class="rounded-full">
+  </div>
+  
+
+  <Card />
+
+<div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-x-10 lg:gap-y-0 gap-y-8 my-48">
+   <section class="px-4 ">
+    <h2 class=" text-2xl font-lora text-emerald-600 pb-5">mision</h2>
+    <p class="font-nunito text-slate-700 text-lg">
+     Nuestra misión es exportar frutas exóticas y tropicales de alta calidad alrededor del mundo,
+     mientras promovemos la inclusión y el crecimiento continuo de pequeños, medianos y grandes
+     productores. Nos esforzamos por velar por la seguridad, salud y bienestar de nuestro personal y
+     la comunidad productora del agro, siempre bajo los principios de responsabilidad y excelencia.
+    </p>
+   </section>
+   <section class="px-4">
+    <h2 class="text-2xl font-lora text-emerald-600 pb-5 ">vision</h2>
+    <p class="font-nunito text-slate-700 text-lg">
+     Ser líderes en el mercado global de frutas exóticas y tropicales, destacando por la calidad y
+     variedad de nuestros productos y la excelencia en nuestro servicio. Buscamos constantemente
+     innovar en nuestros procesos productivos y de comercialización, contribuyendo al desarrollo
+     sostenible del agro colombiano y generando bienestar para nuestros colaboradores, proveedores y
+     clientes en todo el mundo.
+    </p>
+   </section>
+</div>
+ </main>
+</Layout>
