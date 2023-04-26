@@ -7,9 +7,9 @@ const Navbar = () => {
   <>
    <nav className="Navbar-content">
     <div className="flex items-center justify-between px-4 lg:px-0">
-        <a href="/">
-     <img src="/logo.png" width="100" height="100" alt="logo colfrutas" />
-        </a>
+     <a href="/">
+      <img src="/logo.png" width="100" height="100" alt="logo colfrutas" />
+     </a>
      <div className="cursor-pointer" onClick={() => setOpen(!open)}>
       {open ? <RiCloseFill className="Icons-navbar" /> : <RiMenuFill className="Icons-navbar" />}
      </div>
@@ -21,20 +21,26 @@ const Navbar = () => {
       }`}
      >
       <li className="Navbar-item">
-        <a href="/">inicio</a>
+       <a href="/">inicio</a>
       </li>
       <li className="Navbar-item">
-        <a href="/nosotros">nosotros</a>
+       <a href="/nosotros">nosotros</a>
       </li>
       <li className="Navbar-item">
-        <a href="/productos">productos</a>
-        </li>
-      <li className="Navbar-item">contacto</li>
+       <a href="/productos">productos</a>
+      </li>
+      <li className="Navbar-item">
+       <a href="/contacto">contacto</a>
+      </li>
      </ul>
 
-     <button className="Button">
+     <a
+      className="Button"
+      target="_blank"
+      href="https://api.whatsapp.com/send?phone=573197365616&amp;text=Me%20interesa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Colfrutas,%20mi%20nombre%20es"
+     >
       <RiWhatsappLine /> Whatsapp
-     </button>
+     </a>
     </div>
    </nav>
   </>
