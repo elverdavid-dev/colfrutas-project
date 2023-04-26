@@ -1,4 +1,4 @@
-import { RiFacebookFill, RiPhoneLine, RiInstagramLine } from "react-icons/ri/index.js";
+import { RiFacebookFill, RiPhoneLine, RiInstagramLine,RiLinkedinFill } from "react-icons/ri/index.js";
 
 const Footer = () => {
  return (
@@ -21,7 +21,7 @@ const Footer = () => {
 
     <div className="flex items-center justify-center flex-col gap-y-3 ">
      <h2 className="text-2xl font-bold">SIGUENOS</h2>
-     <div className="flex lg:flex-col gap-3">
+     <div className="flex  gap-3">
       <a
        href="https://www.facebook.com/colfrutasexport/"
        title="link a facebook"
@@ -30,8 +30,11 @@ const Footer = () => {
       >
        <RiFacebookFill />
       </a>
-      <a href="#" title="link a instagram" target="_blank" className="Redes-sociales">
+      <a href="https://instagram.com/colfrutasoficial?igshid=YmMyMTA2M2Y=" title="link a instagram" target="_blank" className="Redes-sociales">
        <RiInstagramLine />
+      </a>
+      <a href="https://www.linkedin.com/company/colfrutas/" title="link de linkedin" className="Redes-sociales">
+        <RiLinkedinFill/>
       </a>
      </div>
     </div>
