@@ -15,7 +15,7 @@ body {
  @apply lg:flex items-center lg:pb-0 pb-32  gap-x-8 absolute lg:static lg:w-auto w-full bg-base transition-all ease-in z-[-1] lg:z-auto duration-300;
 }
 .Button {
- @apply py-2 lg:px-4 px-16 flex items-center gap-x-1 bg-gradient-to-tl from-emerald-600 to-emerald-500 text-white rounded-lg font-bold hover:shadow-md hover:shadow-green-600/50 transition-all mx-auto ;
+ @apply py-2 lg:px-4 px-16 flex items-center gap-x-1 bg-gradient-to-tl from-emerald-600 to-emerald-500 text-white rounded-lg font-bold hover:shadow-md hover:shadow-green-600/50 transition-all justify-center ;
 }
 .Footer-item {
  @apply flex items-center gap-x-1;
