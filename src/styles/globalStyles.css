@@ -35,3 +35,7 @@ body {
 .Hero-Link {
  @apply px-10 py-2 border-2 border-emerald-600 rounded-lg font-bold text-emerald-800 flex items-center gap-x-2 active:scale-[1.2] duration-500 justify-center lg:w-1/5 md:w-1/4;
 }
+
+.Icon{
+    @apply flex lg:items-center items-start gap-x-2 
+}

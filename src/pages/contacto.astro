@@ -1,26 +1,49 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import { FiMail, FiPhone, FiMapPin } from "react-icons/fi/index.js";
 ---
 
 <Layout title="Colfrutas | Contacto">
  <main class="lg:mx-10 mx-4">
   <h1 class="text-4xl text-center text-emerald-600 font-lora">Contactanos</h1>
   <div class="flex flex-col justify-center items-center">
-   <h2 class="font-nunito text-lg text-slate-700 mt-16 lg:w-2/3">
-    En C.I COLFRUTAS S.A.S nos importa mucho estar en contacto con nuestros clientes y escuchar sus
-    comentarios, sugerencias y preguntas. Queremos asegurarnos de que su experiencia con nuestros
-    productos y servicios sea siempre la mejor posible. Si tiene alguna pregunta o necesita
-    información adicional sobre nuestros productos, no dude en contactarnos. Nuestro equipo de
-    atención al cliente está disponible para ayudarle en todo lo que necesite. Además, si desea
-    hacernos alguna sugerencia o comentario, también estamos abiertos a recibir su opinión. ¡Gracias
-    por confiar en Colfrutas.
-   </h2>
-   <h3 class="font-nunito text-lg text-slate-700 mt-16 lg:w-2/3 mb-40">
-    Si desea ponerse en contacto con nosotros puede hacer atraves de nuestro correo <span
-     class="text-emerald-600">cicolfrutasexport@gmail.com</span
-    > o atraves de estos numeros de telefono <span class="text-emerald-600">(57) 3197365616 , (034) 8283342</span>.
-    o puedes dirigirte a nuestras oficinas en <span class="text-emerald-600">DG 99 106C-32 Barrio los almendros, en apartado antioquia</span>
-   </h3>
+   <div class="lg:w-2/3">
+    <h2 class="font-nunito text-lg text-slate-700 mt-16">
+     En C.I COLFRUTAS S.A.S nos importa mucho estar en contacto con nuestros clientes y escuchar sus
+     comentarios, sugerencias y preguntas. Queremos asegurarnos de que su experiencia con nuestros
+     productos y servicios sea siempre la mejor posible. Si tiene alguna pregunta o necesita
+     información adicional sobre nuestros productos, no dude en contactarnos. Nuestro equipo de
+     atención al cliente está disponible para ayudarle en todo lo que necesite. Además, si desea
+     hacernos alguna sugerencia o comentario, también estamos abiertos a recibir su opinión.
+     ¡Gracias por confiar en Colfrutas.
+    </h2>
+    <h3 class="font-lora text-xl text-emerald-600 mt-16 mb-10">
+     Para ponerse en contacto con nosotros, puede hacerlo a través de los siguientes medios
+    </h3>
+
+    <div class="font-nunito text-lg flex flex-col gap-y-4 mb-40">
+     <span class="Icon">
+      <FiMail className="text-2xl" />
+      cicolfrutasexport@gmail.com
+     </span>
+     <span class="Icon">
+      <FiPhone className="text-2xl" />
+      57(4) 8283342 - +57 3197365616
+     </span>
+     <span class="Icon">
+      <FiMapPin className="text-2xl"/>
+      <span class="flex-1">
+        DG 99 106C-32 Barrio Los Almendros Apartadó, Antioquia - Colombia
+       <a
+        href="https://goo.gl/maps/5gCefBE7YY1M1Ye77"
+        target="_blank"
+        title="como llegar"
+        class="text-sky-600 hover:text-sky-800">Como llegar</a
+       ></span
+      >
+     </span>
+    </div>
+   </div>
   </div>
  </main>
 </Layout>
