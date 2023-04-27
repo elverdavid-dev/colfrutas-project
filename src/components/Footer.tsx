@@ -41,7 +41,7 @@ const Footer = () => {
    </footer>
    <h2 className="bg-slate-800 text-base capitalize lg:text-start text-center  ">
     desarrollado por{" "}
-    <a href="https://www.elverportafolio.online" target="_blank" title="mi portafolio web" className="text-white font-nunito hover:text-sky-500 duration-500">
+    <a href="https://www.elverportafolio.online" target="_blank" title="mi portafolio web" className=" font-nunito text-sky-100 hover:text-sky-500 duration-500 underline">
      elver david peñate
     </a>
    </h2>

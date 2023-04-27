@@ -37,5 +37,5 @@ body {
 }
 
 .Icon{
-    @apply flex lg:items-center items-start gap-x-2 
+    @apply flex lg:items-center items-start gap-x-2 text-slate-700 
 }

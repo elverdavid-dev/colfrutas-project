@@ -1,4 +1,5 @@
 ---
+import Form from "@components/Form";
 import Layout from "@layouts/Layout.astro";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi/index.js";
 ---
@@ -23,27 +24,28 @@ import { FiMail, FiPhone, FiMapPin } from "react-icons/fi/index.js";
 
     <div class="font-nunito text-lg flex flex-col gap-y-4 mb-40">
      <span class="Icon">
-      <FiMail className="text-2xl" />
+      <FiMail className="text-2xl text-slate-800" />
       cicolfrutasexport@gmail.com
      </span>
      <span class="Icon">
-      <FiPhone className="text-2xl" />
+      <FiPhone className="text-2xl text-slate-800" />
       57(4) 8283342 - +57 3197365616
      </span>
      <span class="Icon">
-      <FiMapPin className="text-2xl"/>
+      <FiMapPin className="text-2xl text-slate-800" />
       <span class="flex-1">
-        DG 99 106C-32 Barrio Los Almendros Apartadó, Antioquia - Colombia
+       DG 99 106C-32 Barrio Los Almendros Apartadó, Antioquia - Colombia
        <a
         href="https://goo.gl/maps/5gCefBE7YY1M1Ye77"
         target="_blank"
         title="como llegar"
-        class="text-sky-600 hover:text-sky-800">Como llegar</a
-       ></span
-      >
+        class="text-sky-600 hover:text-sky-800 underline">Como llegar</a
+       >
+       </span>
      </span>
     </div>
    </div>
   </div>
+  <Form />
  </main>
 </Layout>
