@@ -1,5 +1,6 @@
 import ThemeProvider from '@components/Provider'
-import {Input,Textarea,Button} from '@material-tailwind/react'
+import MaterialTailwind from '@material-tailwind/react'
+const {Input,Textarea,Button} = MaterialTailwind;
 const Form = () => {
   return (
     <ThemeProvider>

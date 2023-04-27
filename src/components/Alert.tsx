@@ -1,7 +1,8 @@
 import ProviderTheme from "@components/Provider";
-import { Alert } from "@material-tailwind/react";
+import MaterialTailwind from "@material-tailwind/react/index.js";
 import { AiOutlineInfoCircle } from "react-icons/ai/index.js";
 import { useState } from "react";
+const { Alert } = MaterialTailwind;
 const AlertMessage = () => {
  const [show, setShow] = useState(true);
  return (

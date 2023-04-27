@@ -1,5 +1,5 @@
-import { ThemeProvider } from "@material-tailwind/react";
-
+import MaterialTailwind from "@material-tailwind/react/index.js";
+const { ThemeProvider } = MaterialTailwind;
 const Provider = ({ children }) => {
  return <ThemeProvider>{children} </ThemeProvider>;
 };
