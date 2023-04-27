@@ -18,11 +18,14 @@ const Product = () => {
       },
       i
      ) => (
-      <div key={i} className="bg-white border shadow-md shadow-emerald-600/20 rounded-lg py-5">
+      <div
+       key={i}
+       className="bg-white border shadow-md shadow-emerald-600/20 rounded-lg py-5 relative"
+      >
        <h2 className="text-center font-lora text-2xl text-slate-800 py-3">{producto} </h2>
        <img
         src={image}
-        alt=""
+        alt={producto}
         width={450}
         height={450}
         className="col-span-2 lg:h-[320px] mx-auto w-full"

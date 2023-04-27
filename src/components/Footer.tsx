@@ -33,7 +33,7 @@ const Footer = () => {
       <a href="https://instagram.com/colfrutasoficial?igshid=YmMyMTA2M2Y=" title="link a instagram" target="_blank" className="Redes-sociales">
        <RiInstagramLine />
       </a>
-      <a href="https://www.linkedin.com/company/colfrutas/" title="link de linkedin" className="Redes-sociales">
+      <a href="https://www.linkedin.com/company/colfrutas/" title="link a linkedin" className="Redes-sociales">
         <RiLinkedinFill/>
       </a>
      </div>
@@ -41,7 +41,7 @@ const Footer = () => {
    </footer>
    <h2 className="bg-slate-800 text-base capitalize lg:text-start text-center  ">
     desarrollado por{" "}
-    <a href="https://www.elverportafolio.online" target="_blank" className="text-white font-nunito hover:text-sky-500 duration-500">
+    <a href="https://www.elverportafolio.online" target="_blank" title="mi portafolio web" className="text-white font-nunito hover:text-sky-500 duration-500">
      elver david peñate
     </a>
    </h2>

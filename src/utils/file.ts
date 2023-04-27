@@ -128,7 +128,7 @@ export const InfoProduct: ProductInterface[] = [
   variedad: "Agrosavia Aurora (Pulpa naranja), Lila, Blanca, Amarilla",
   familia: " Convolvuláceas",
   nombre_cientifico: "Ipomoea batata / convólvulos batatas",
-  lugar_de_produccion: "",
+  lugar_de_produccion: "Sin especificar",
   tipos_de_empaque: " 6Kg",
   disponibilidad: "Todo el año",
   image: "./Products/batata.jpg",
