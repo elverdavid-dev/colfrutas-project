@@ -27,9 +27,6 @@ body {
 .Icons-navbar {
  @apply text-3xl lg:hidden;
 }
-.Carrucel-image {
- @apply w-full h-auto block m-auto;
-}
 
 /** component Hero */
 .Hero-Link {

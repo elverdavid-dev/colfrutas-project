@@ -1,15 +1,25 @@
 ---
-import Product from '@components/Product';
-import Layout from '@layouts/Layout.astro'
+import Product from "@components/Product.astro";
+import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout title="Colfrutas | Productos">
-<main class="lg:mx-10 mx-4">
- <div class="flex flex-col justify-center items-center">
-    <h1 class="text-center lg:text-5xl text-3xl text-emerald-600 font-lora">Descubre Nuestra Variedad de Frutas Exóticas</h1>
-    <h2 class="font-nunito text-lg text-slate-700 mt-16 lg:w-2/3">En C.I COLFRUTAS S.A.S nos enorgullece ofrecer una amplia variedad de frutas exóticas y tropicales de alta calidad, cultivadas en las regiones más fértiles de Colombia. Nuestro compromiso con la excelencia en la producción y el cuidado de cada fruto, nos ha permitido ser reconocidos en el mercado nacional e internacional como una compañía líder en el sector agroexportador. Además, nuestra labor se enfoca en generar oportunidades de negocio para pequeños, medianos y grandes productores, contribuyendo así al crecimiento continuo de la comunidad productora del agro con visión de exportador.</h2>
- </div>
- <h2 class="text-4xl font-lora text-emerald-600 mt-40">Productos</h2>
- <Product client:visible/>
-</main>
+ <main class="lg:mx-10 mx-4">
+  <div class="flex flex-col justify-center items-center">
+   <h1 class="text-center lg:text-5xl text-3xl text-emerald-600 font-lora">
+    Descubre Nuestra Variedad de Frutas Exóticas
+   </h1>
+   <h2 class="font-nunito text-lg text-slate-700 mt-16 lg:w-2/3">
+    En C.I COLFRUTAS S.A.S nos enorgullece ofrecer una amplia variedad de frutas exóticas y
+    tropicales de alta calidad, cultivadas en las regiones más fértiles de Colombia. Nuestro
+    compromiso con la excelencia en la producción y el cuidado de cada fruto, nos ha permitido ser
+    reconocidos en el mercado nacional e internacional como una compañía líder en el sector
+    agroexportador. Además, nuestra labor se enfoca en generar oportunidades de negocio para
+    pequeños, medianos y grandes productores, contribuyendo así al crecimiento continuo de la
+    comunidad productora del agro con visión de exportador.
+   </h2>
+  </div>
+  <h2 class="text-4xl font-lora text-emerald-600 mt-40">Productos</h2>
+  <Product />
+ </main>
 </Layout>
