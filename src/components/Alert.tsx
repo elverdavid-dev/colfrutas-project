@@ -3,7 +3,6 @@ import {Alert} from 'flowbite-react'
 import { useState } from "react";
 const AlertMessage = () => {
   const [closeMessage, setCloseMessage] = useState(false)
-  console.log(closeMessage)
  return (
    <Alert
    className={`${(closeMessage === true) ? "hidden" : ""}`}
