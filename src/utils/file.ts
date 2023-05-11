@@ -136,3 +136,31 @@ export const InfoProduct: ProductInterface[] = [
    " Es conocida con el nombre de Batata, Camote, Batata de Málaga, Patata Dulce, Boniato, Papa dulce. Su color depende de la variedad a la que se haga referencia, su forma también varia, pero es posible encontrar de tamaños entre 5 - 40cm de longitud. Una de las características más importantes es su sabor ya que se trata de un sabor dulce debido al alto índices de azucares simples en sus nutrientes.",
  },
 ];
+
+
+export const ValoresCorp = [
+  {
+    url:"/integridad.png",
+    name:"Integridad"
+  },
+  {
+    url:"/compromiso.png",
+    name:"Compromiso"
+  },
+  {
+    url:"/adaptabilidad.png",
+    name:"Adaptabilidad"
+  },
+  {
+    url:"/calidad.png",
+    name:"Calidad"
+  },
+  {
+    url:"/servicio.png",
+    name:"Servicio"
+  },
+  {
+    url:"/pasion.png",
+    name:"Pasion"
+  }
+]

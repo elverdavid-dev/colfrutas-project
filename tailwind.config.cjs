@@ -15,11 +15,12 @@ module.exports = {
 			},
 			colors: {
 				base: "#f6f6f6",
-				primary:"#912F72"
+				primary:"#912F72",
 			},
 		},
 	},
 	plugins: [
-		require('flowbite/plugin')
+		require('flowbite/plugin'),
+		require('tailwind-scrollbar')({ nocompatible: true })
 	],
 }

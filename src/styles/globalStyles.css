@@ -1,5 +1,5 @@
 body {
- @apply bg-base   selection:bg-emerald-500 selection:text-white;
+ @apply bg-base   selection:bg-emerald-500 selection:text-white lg:scrollbar-thumb-rounded-lg   lg:scrollbar-track-rounded-sm  lg:scrollbar-thin lg:scrollbar-thumb-slate-400 lg:scrollbar-track-slate-300;
 }
 
 .Navbar-content {

@@ -1,6 +1,7 @@
 ---
 import { RiArrowRightLine } from "react-icons/ri/index.js";
 import AlertMessage from "@components/Alert";
+import { ValoresCorp } from "@utils/file";
 ---
 
 <div class="lg:mx-10 mx-4 mt-16">
@@ -21,11 +22,11 @@ import AlertMessage from "@components/Alert";
    </a>
   </div>
   <img
-   src="./icono.png"
+   src="./Hero-colfrutas.png"
    width="450"
    height="450"
    alt=""
-   class="lg:absolute right-0 top-1 lg:mx-0 mx-auto"
+   class="lg:absolute right-10 top-0 lg:mx-0 mx-auto"
   />
  </section>
  <!-- message abvertencia -->
@@ -38,13 +39,19 @@ import AlertMessage from "@components/Alert";
    Nuestra marca <span class="font-berkshire text-emerald-600">The Green King</span>
    fue creada para darle una identidad especial a nuestra línea de productos frescos.
   </p>
-  <img src="./hero.png" width="420" height="420" alt="" />
+  <img src="./icono.png" width="420" height="420" alt="" />
  </div>
 </div>
-<div class="flex lg:justify-around lg:flex-row justify-center flex-col items-center gap-y-4 mt-20">
- <img src="./caja1.png" width="250" alt="" />
- <img src="./caja2.png" width="250" alt="" />
- <img src="./caja3.png" width="250" alt="" />
+<h2 class="text-center font-lora mt-32 text-emerald-600 text-4xl">Valores corporativos</h2>
+<div class="grid lg:grid-cols-3 grid-cols-2 items-center mt-20">
+ {
+  ValoresCorp.map(({ url, name }) => (
+   <section class="mx-auto">
+    <img src={url} alt="" width="150" />
+    <h3 class="text-center font-nunito text-2xl text-slate-800">{name}</h3>
+   </section>
+  ))
+ }
 </div>
 <div class="mt-56 flex justify-center mx-5">
  <span class="text-2xl font-nunito text-slate-700">
