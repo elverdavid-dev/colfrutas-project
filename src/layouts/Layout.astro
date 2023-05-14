@@ -33,12 +33,13 @@ const { title } = Astro.props;
    rel="stylesheet"
   />
   <!-- siteMap -->
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="canonical" href="https://www.colfrutas.site" />
+  <link rel="icon" type="image/png" href="/favicon-colfrutas.png" />
+  <meta property="og:image" content="https://www.colfrutas.site/favicon-colfrutas.png" />
   <meta charset="UTF-8" />
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width" />
-  <link rel="canonical" href="https://www.colfrutas.site">
-  <link rel="icon" type="image/png" href="/favicon-colfrutas.png" sizes="32x32"/>
   <meta name="generator" content={Astro.generator} />
   <!-- meta google -->
   <meta name="google-site-verification" content="bd2TXzFjDTeG_jfRnYUHqRePypXy64q2PJ5_knndamo" />
@@ -51,6 +52,6 @@ const { title } = Astro.props;
  <body>
   <Navbar client:load />
   <slot />
-  <Footer/>
+  <Footer />
  </body>
 </html>
