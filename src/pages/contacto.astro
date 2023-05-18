@@ -4,7 +4,11 @@ import Layout from "@layouts/Layout.astro";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi/index.js";
 ---
 
-<Layout title="Colfrutas | Contacto">
+<Layout
+ title="Colfrutas | Contacto"
+ description=" Ponte en contacto con nosotros para cualquier consulta, solicitud de información o colaboración. Estamos comprometidos en brindarte un excelente servicio y responder a tus inquietudes de manera rápida y amigable"
+>
+
  <main class="lg:mx-10 mx-4">
   <h1 class="text-4xl text-center text-emerald-600 font-lora">Contactanos</h1>
   <div class="flex flex-col justify-center items-center">
@@ -39,13 +43,13 @@ import { FiMail, FiPhone, FiMapPin } from "react-icons/fi/index.js";
         href="https://goo.gl/maps/5gCefBE7YY1M1Ye77"
         target="_blank"
         title="como llegar"
-        class="text-sky-600 hover:text-sky-800 underline">Como llegar</a
+        class="text-blue-600 hover:text-sky-800 underline">Como llegar</a
        >
-       </span>
+      </span>
      </span>
     </div>
    </div>
   </div>
-  <Form client:load/>
+  <Form client:load />
  </main>
 </Layout>

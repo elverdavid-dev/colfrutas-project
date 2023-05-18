@@ -14,10 +14,10 @@ const Navbar = () => {
       {open ? <RiCloseFill className="Icons-navbar" /> : <RiMenuFill className="Icons-navbar" />}
      </div>
     </div>
-    <div className={`Navbar-content-item ${open ? "top-20" : "top-[-420px] "}`}>
+    <div className={`Navbar-content-item ${open ? "top-20" : "top-[-520px] "}`}>
      <ul
       className={`Navbar-list ${
-       open ? "top-20 opacity-100 " : "top-[-420px] lg:opacity-100 opacity-0"
+       open ? "top-20 opacity-100 " : "top-[-520px] lg:opacity-100 opacity-0"
       }`}
      >
       <li className="Navbar-item">

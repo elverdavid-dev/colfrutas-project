@@ -5,24 +5,31 @@ body {
 .Navbar-content {
  @apply lg:flex  items-center justify-between lg:px-8 px-0 py-2 top-0 sticky z-50 mb-7  bg-base;
 }
+
 .Navbar-list {
  @apply lg:flex items-center gap-x-5 gap-5 text-slate-800 flex justify-center flex-col lg:flex-row;
 }
+
 .Navbar-item {
  @apply hover:text-emerald-600 transition-all cursor-pointer capitalize font-nunito lg:my-0 my-7;
 }
+
 .Navbar-content-item {
- @apply lg:flex items-center lg:pb-0 pb-32  gap-x-8 absolute lg:static lg:w-auto w-full bg-base transition-all ease-in z-[-1] lg:z-auto duration-300;
+ @apply lg:flex items-center lg:pb-0 pb-96  gap-x-8 absolute lg:static lg:w-auto w-full bg-base transition-all ease-in z-[-1] lg:z-auto duration-300;
 }
+
 .Button {
  @apply py-2 lg:px-4 px-16 flex items-center gap-x-1 bg-gradient-to-tl from-emerald-600 to-emerald-500 text-white rounded-lg font-bold hover:shadow-md hover:shadow-green-600/50 transition-all justify-center ;
 }
+
 .Footer-item {
  @apply flex items-center gap-x-1;
 }
+
 .Redes-sociales {
  @apply w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-800 hover:bg-gray-300;
 }
+
 
 .Icons-navbar {
  @apply text-3xl lg:hidden;
@@ -32,6 +39,7 @@ body {
 .Hero-Link {
  @apply px-10 py-2 border-2 border-emerald-600 rounded-lg font-bold text-emerald-800 flex items-center gap-x-2 active:scale-[1.2] duration-500 justify-center lg:w-1/5 md:w-1/4;
 }
+
 
 .Icon{
     @apply flex lg:items-center items-start gap-x-2 text-slate-700 
