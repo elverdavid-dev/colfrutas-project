@@ -11,11 +11,13 @@ module.exports = {
 				nunito: "'Nunito', sans-serif",
 				berkshire: "'Berkshire Swash', cursive",
 				kanit: "'Kanit', sans-serif",
-				lora: "'Lora', serif;"
+				lora: "'Lora', serif;",
+				rubik: "'Rubik', sans-serif",
+				passionOne:"'Passion One', cursive"
 			},
 			colors: {
 				base: "#f6f6f6",
-				primary:"#912F72",
+				primary: "#912F72",
 			},
 		},
 	},

@@ -4,15 +4,15 @@ import Footer from "@components/Footer.astro";
 import "../styles/globalStyles.css";
 export interface Props {
  title: string;
- description:string
 }
 
-const { title,description } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="es">
  <head>
+
   <!-- font nunito -->
   <link
    href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
@@ -33,12 +33,18 @@ const { title,description } = Astro.props;
    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap"
    rel="stylesheet"
   />
+<!-- rubik -->
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+
   <!-- siteMap -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="canonical" href="https://www.colfrutas.site" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="https://www.colfrutas.site/favicon-colfrutas.png" sizes="32x32"/>
-  <link rel="apple-touch-icon" href="https://www.colfrutas.site/favicon-colfrutas.png">
+  <link rel="icon" type="image/x-icon" href="https://colfrutas.site/favicon-colfrutas.png" sizes="32x32"/>
   <meta charset="UTF-8" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width" />
@@ -47,7 +53,7 @@ const { title,description } = Astro.props;
   <meta name="google-site-verification" content="bd2TXzFjDTeG_jfRnYUHqRePypXy64q2PJ5_knndamo" />
   <meta
    name="description"
-   content={description}
+   content="colfrutas somos una compañía dedicada a la exportación de frutas frescas colombianas bajo el principio de la calidad. Somos esfuerzo, resiliencia y amor por el campo."
   />
   <title>{title}</title>
  </head>
