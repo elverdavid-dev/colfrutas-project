@@ -8,9 +8,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				nunito: "'Nunito', sans-serif",
 				berkshire: "'Berkshire Swash', cursive",
-				kanit: "'Kanit', sans-serif",
 				lora: "'Lora', serif;",
 				rubik: "'Rubik', sans-serif",
 				passionOne:"'Passion One', cursive"
