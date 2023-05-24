@@ -15,7 +15,7 @@ import { ValoresCorp } from "@utils/file";
    </h2>
    <a href="/nosotros" class="Hero-Link group">
     ver mas
-    <RiArrowRightLine className="text-xl group-hover:translate-x-2 transition-all" />
+    <RiArrowRightLine className="text-xl group-hover:translate-x-2 transition-all ease-out" />
    </a>
   </div>
   <img
@@ -24,6 +24,7 @@ import { ValoresCorp } from "@utils/file";
    height="450"
    alt="hero colfruta image"
    class="lg:mx-0 mx-auto"
+   loading={"lazy"}
   />
  </section>
 
@@ -45,7 +46,7 @@ import { ValoresCorp } from "@utils/file";
  {
   ValoresCorp.map(({ url, name }) => (
    <section class="mx-auto">
-    <img src={url} alt={name} width="150" height="150" />
+    <img src={url} alt={name} width="150" height="150" loading={"lazy"} />
     <h3 class="text-center font-rubik text-2xl text-slate-800">{name}</h3>
    </section>
   ))
@@ -59,4 +60,4 @@ import { ValoresCorp } from "@utils/file";
   > a todo el mundo
  </span>
 </div>
-<img src="./mapExports.png" alt="Map export colfrutas" width="677" height="368" class="mb-32 mx-auto mt-16" />
+<img src="./mapExports.png" alt="Map export colfrutas" width="677" height="368" class="mb-32 mx-auto mt-16" loading={"lazy"} />

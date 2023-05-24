@@ -30,7 +30,7 @@ body {
 
 /** component Hero */
 .Hero-Link {
- @apply px-10 py-2 border-2 border-emerald-600 rounded-lg font-bold text-emerald-800 flex items-center gap-x-2 active:scale-[1.2] font-rubik  duration-500 justify-center lg:w-1/2;
+ @apply px-10 py-2 border-2 border-emerald-600 rounded-lg font-bold text-emerald-800 flex items-center gap-x-2 active:scale-[1.2] font-rubik  duration-500 justify-center lg:w-1/2 hover:bg-emerald-600 hover:text-white;
 }
 
 .Icon {
