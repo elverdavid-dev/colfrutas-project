@@ -2,17 +2,17 @@ import { ProductInterface } from "Interfaces/Product.interface";
 
 export const InfoCard = [
  {
-  url: "./hero.png",
+  url: "./produccion.svg",
   description:
    " Trabajamos con productores locales para mejorar la calidad de la fruta desde su origen,asegurando que se cultive de manera sostenible y con los más altos estándares de calidad. ",
  },
  {
-  url: "./empaque.png",
+  url: "./empaque.svg",
   description:
    "  Creamos alianzas estratégicas con exportadores y proveedores para expandir nuestra cadena de comercialización, asegurando que los consumidores internacionales tengan acceso a nuestra amplia variedad de frutas exóticas y tropicales.",
  },
  {
-  url: "./exportacion.png",
+  url: "./exportacion.svg",
   description:
    "Nos enfocamos en la innovación de nuestros procesos de exportación para garantizar la eficiencia y calidad de nuestras operaciones.",
  },
@@ -140,27 +140,27 @@ export const InfoProduct: ProductInterface[] = [
 
 export const ValoresCorp = [
   {
-    url:"/integridad.png",
+    url:"/integridad.svg",
     name:"Integridad"
   },
   {
-    url:"/compromiso.png",
+    url:"/compromiso.svg",
     name:"Compromiso"
   },
   {
-    url:"/adaptabilidad.png",
+    url:"/adaptabilidad.svg",
     name:"Adaptabilidad"
   },
   {
-    url:"/calidad.png",
+    url:"/calidad.svg",
     name:"Calidad"
   },
   {
-    url:"/servicio.png",
+    url:"/servicio.svg",
     name:"Servicio"
   },
   {
-    url:"/pasion.png",
+    url:"/pasion.svg",
     name:"Pasion"
   }
 ]
