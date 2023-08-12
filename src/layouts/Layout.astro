@@ -1,6 +1,6 @@
 ---
-import Navbar from "@components/Navbar";
 import Footer from "@components/Footer.astro";
+import Navbar from "@components/Navbar";
 import "../styles/globalStyles.css";
 export interface Props {
  title: string;
@@ -42,11 +42,7 @@ const { title } = Astro.props;
   <link rel="canonical" href="https://www.colfrutas.site/" />
   <link rel="shortlink" href="https://www.colfrutas.site/" />
   <!-- Favicon -->
-  <link
-   rel="shortcut icon"
-   href="/favicon-colfrutas.png"
-   type="image/x-icon"
-  />
+  <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
 
   <!-- meta google -->
   <meta name="google-site-verification" content="bd2TXzFjDTeG_jfRnYUHqRePypXy64q2PJ5_knndamo" />
@@ -58,7 +54,7 @@ const { title } = Astro.props;
   <title>{title}</title>
  </head>
  <body>
-  <Navbar client:load />
+  <Navbar client:visible />
   <slot />
   <Footer />
  </body>

@@ -21,7 +21,7 @@ body {
 }
 
 .Button {
- @apply py-2 lg:px-4 px-16 flex items-center gap-x-1 bg-gradient-to-tl from-emerald-600 to-emerald-500 text-white rounded-lg font-bold hover:shadow-md hover:shadow-green-600/50 transition-all justify-center;
+ @apply py-2 lg:px-4 px-16 flex items-center gap-x-1 bg-gradient-to-tl from-emerald-600 to-emerald-500 text-white rounded-lg font-bold hover:shadow-md hover:shadow-green-600/50 transition-all justify-center mx-2 lg:mx-0;
 }
 
 .Icons-navbar {
