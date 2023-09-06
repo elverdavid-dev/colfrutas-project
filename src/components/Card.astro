@@ -2,14 +2,22 @@
 import { InfoCard } from "@utils/file";
 ---
 
-<h2 class="text-center mt-16 text-5xl font-lora text-emerald-600">¿Qué hacemos?</h2>
+<h2 class="text-center mt-16 text-5xl font-lora text-emerald-600">
+  ¿Qué hacemos?
+</h2>
 <div class="Content-card">
- {
-  InfoCard.map(({ description, url }) => (
-   <div class="Card">
-    <img src={url} alt="iconos de about" width="386" height="386" class="mx-auto" />
-    <p class="Card-description">{description} </p>
-   </div>
-  ))
- }
+  {
+    InfoCard.map(({ description, url }) => (
+      <div class="Card">
+        <img
+          src={url}
+          alt="iconos de about"
+          width="386"
+          height="386"
+          class="mx-auto"
+        />
+        <p class="Card-description">{description} </p>
+      </div>
+    ))
+  }
 </div>
