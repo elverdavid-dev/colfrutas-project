@@ -1,62 +1,78 @@
 ---
-import { RiArrowRightLine } from "react-icons/ri/index.js";
 import AlertMessage from "@components/Alert";
 import { ValoresCorp } from "@utils/file";
+import { RiArrowRightLine } from "react-icons/ri/index.js";
 ---
 
 <div class="lg:mx-10 mx-4 mt-16">
+  <section class="Content-hero">
+    <div class="mb-10 lg:mb-0">
+      <h1 class="Title">Exportando la frescura de Colombia al mundo</h1>
+      <article class="Description">
+        Somos una compañía dedicada a la exportación de frutas frescas
+        colombianas bajo el principio de la calidad. Somos esfuerzo, resiliencia
+        y amor por el campo.
+      </article>
+      <a href="/nosotros" class="Hero-Link group">
+        ver mas
+        <RiArrowRightLine
+          className="text-xl group-hover:translate-x-2 transition-all ease-out"
+        />
+      </a>
+    </div>
+    <img
+      src="./Hero-colfrutas.png"
+      width="450"
+      height="450"
+      alt="hero colfruta image"
+      class="lg:mx-0 mx-auto"
+    />
+  </section>
 
- <section class="Content-hero">
-  <div class="mb-10 lg:mb-0">
-   <h1 class="Title">Exportando la frescura de Colombia al mundo</h1>
-   <h2 class="Description">
-    Somos una compañía dedicada a la exportación de frutas frescas colombianas bajo el principio de
-    la calidad. Somos esfuerzo, resiliencia y amor por el campo.
-   </h2>
-   <a href="/nosotros" class="Hero-Link group">
-    ver mas
-    <RiArrowRightLine className="text-xl group-hover:translate-x-2 transition-all ease-out" />
-   </a>
-  </div>
-  <img
-   src="./Hero-colfrutas.png"
-   width="450"
-   height="450"
-   alt="hero colfruta image"
-   class="lg:mx-0 mx-auto"
-  />
- </section>
+  <!-- message abvertencia -->
+  <AlertMessage client:load />
 
- <!-- message abvertencia -->
- <AlertMessage client:load />
-
- <section class="flex flex-col lg:flex-row items-center lg:justify-between justify-center mt-16">
-  <p
-   class="lg:w-1/2 px-3 self-center font-rubik text-center lg:text-4xl text-3xl text-slate-700 tracking-tighter"
+  <section
+    class="flex flex-col lg:flex-row items-center lg:justify-between justify-center mt-16"
   >
-   Nuestra marca <span class="font-berkshire text-emerald-600">The Green King</span>
-   ha sido creada con el objetivo de proporcionar una identidad especial y única a nuestra excepcional línea de productos frescos.
-  </p>
-  <img src="./icono.png" width="500" height="500" alt="logo The Green King" />
- </section>
+    <p
+      class="lg:w-1/2 px-3 self-center font-rubik text-center lg:text-4xl text-3xl text-slate-800 tracking-tighter"
+    >
+      Nuestra marca <span class="font-berkshire text-emerald-600"
+        >The Green King</span
+      >
+       ha sido creada con el objetivo de proporcionar una identidad especial y
+      única a nuestra excepcional línea de productos frescos.
+    </p>
+    <img src="./icono.png" width="500" height="500" alt="logo The Green King" />
+  </section>
 </div>
-<h2 class="text-center font-lora mt-32 text-emerald-600 text-4xl">Valores corporativos</h2>
+<h2 class="text-center font-kanit mt-32 text-emerald-600 text-4xl">
+  Valores corporativos
+</h2>
 <div class="grid lg:grid-cols-3 grid-cols-2 items-center mt-20">
- {
-  ValoresCorp.map(({ url, name }) => (
-   <section class="mx-auto">
-    <img src={url} alt={name} width="150" height="150" loading={"lazy"} />
-    <h3 class="text-center font-rubik text-2xl text-slate-800">{name}</h3>
-   </section>
-  ))
- }
+  {
+    ValoresCorp.map(({ url, name }) => (
+      <section class="mx-auto">
+        <img src={url} alt={name} width="150" height="150" loading={"lazy"} />
+        <h3 class="text-center font-rubik text-2xl text-slate-800">{name}</h3>
+      </section>
+    ))
+  }
 </div>
 <div class="mt-56 flex justify-center mx-5">
- <span class="text-2xl font-rubik text-slate-700">
-  Nuestro objetivo es llevar la frescura y calidad de las <a
-   href="/productos"
-   class="font-extrabold text-emerald-600">frutas colombianas</a
-  > a todo el mundo
- </span>
+  <span class="text-2xl font-rubik text-slate-800">
+    Nuestro objetivo es llevar la frescura y calidad de las <a
+      href="/productos"
+      class="text-emerald-600 font-kanit">frutas colombianas</a
+    > a todo el mundo
+  </span>
 </div>
-<img src="./mapExports.png" alt="Map export colfrutas" width="677" height="368" class="mb-32 mx-auto mt-16" loading={"lazy"} />
+<img
+  src="./mapExports.png"
+  alt="Map export colfrutas"
+  width="677"
+  height="368"
+  class="mb-32 mx-auto mt-16"
+  loading={"lazy"}
+/>

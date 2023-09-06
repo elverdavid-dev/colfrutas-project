@@ -1,61 +1,98 @@
 ---
 import Footer from "@components/Footer.astro";
 import Navbar from "@components/Navbar";
+import { ViewTransitions } from "astro:transitions";
 import "../styles/globalStyles.css";
 export interface Props {
- title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="robots" content="index, follow" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
 
-  <!-- font berkshire -->
-  <link
-   href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
-   rel="stylesheet"
-  />
+    <!-- Preconnect font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- font lora -->
-  <link
-   href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap"
-   rel="stylesheet"
-  />
-  <!-- rubik -->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+    <!-- font berkshire -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Passion One -->
-  <link
-   href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap"
-   rel="stylesheet"
-  />
+    <!-- rubik -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- siteMap -->
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-  <link rel="canonical" href="https://www.colfrutas.site/" />
-  <link rel="shortlink" href="https://www.colfrutas.site/" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+    <!-- Passion One -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- kanit -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Kanit:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- meta google -->
-  <meta name="google-site-verification" content="bd2TXzFjDTeG_jfRnYUHqRePypXy64q2PJ5_knndamo" />
-  <meta
-   name="description"
-   content="colfrutas somos una compañía dedicada a la exportación de frutas frescas colombianas bajo el principio de la calidad. Somos esfuerzo, resiliencia y amor por el campo.En colfrutas, valoramos el arduo trabajo de los agricultores colombianos y nos esforzamos por ofrecer productos frescos y deliciosos que reflejen su dedicación"
-  />
-  <meta name="theme-color" content="#ffffff" />
-  <title>{title}</title>
- </head>
- <body>
-  <Navbar client:visible />
-  <slot />
-  <Footer />
- </body>
+    <!-- siteMap -->
+    <meta property="og:url" content="https://www.colfrutas.site/" />
+    <meta property="twitter:url" content="https://www.colfrutas.site/" />
+    <link rel="canonical" href="https://www.colfrutas.site/" />
+    <link rel="shortlink" href="https://www.colfrutas.site/" />
+    <meta
+      property="og:image"
+      content="https://www.colfrutas.site/og-colfrutas.png"
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.colfrutas.site/og-colfrutas.png"
+    />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+
+    <!-- meta google -->
+    <meta
+      name="google-site-verification"
+      content="bd2TXzFjDTeG_jfRnYUHqRePypXy64q2PJ5_knndamo"
+    />
+
+    <meta
+      name="description"
+      content="colfrutas somos una compañía dedicada a la exportación de frutas frescas colombianas bajo el principio de la calidad. Somos esfuerzo, resiliencia y amor por el campo.En colfrutas, valoramos el arduo trabajo de los agricultores colombianos y nos esforzamos por ofrecer productos frescos y deliciosos que reflejen su dedicación"
+    />
+    <meta
+      property="og:description"
+      content="colfrutas somos una compañía dedicada a la exportación de frutas frescas colombianas bajo el principio de la calidad. Somos esfuerzo, resiliencia y amor por el campo.En colfrutas, valoramos el arduo trabajo de los agricultores colombianos y nos esforzamos por ofrecer productos frescos y deliciosos que reflejen su dedicación"
+    />
+    <meta
+      property="twitter:description"
+      content="colfrutas somos una compañía dedicada a la exportación de frutas frescas colombianas bajo el principio de la calidad. Somos esfuerzo, resiliencia y amor por el campo.En colfrutas, valoramos el arduo trabajo de los agricultores colombianos y nos esforzamos por ofrecer productos frescos y deliciosos que reflejen su dedicación"
+    />
+
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content={title} />
+    <meta property="twitter:title" content={title} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <header class="top-0 sticky z-50">
+      <Navbar client:visible />
+    </header>
+    <slot />
+    <Footer />
+  </body>
 </html>

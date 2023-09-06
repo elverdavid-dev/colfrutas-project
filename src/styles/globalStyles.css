@@ -5,7 +5,7 @@ body {
 /** Component Navbar*/
 
 .Navbar-content {
- @apply lg:flex  items-center justify-between lg:px-8 px-0 py-2 top-0 sticky z-50 mb-7  bg-base;
+ @apply lg:flex  items-center justify-between lg:px-8 px-0 py-2  mb-7  bg-base;
 }
 
 .Navbar-list {
@@ -46,7 +46,7 @@ body {
 }
 
 .Description {
- @apply text-slate-700  mb-5 font-rubik text-xl mt-3;
+ @apply text-slate-800  mb-5 font-rubik text-xl mt-3;
 }
 
 /** Component Card*/

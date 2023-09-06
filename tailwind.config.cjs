@@ -9,9 +9,9 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				berkshire: "'Berkshire Swash', cursive",
-				lora: "'Lora', serif;",
 				rubik: "'Rubik', sans-serif",
-				passionOne:"'Passion One', cursive"
+				passionOne:"'Passion One', cursive",
+				kanit:"'Kanit', sans-serif"
 			},
 			colors: {
 				base: "#f6f6f6",
