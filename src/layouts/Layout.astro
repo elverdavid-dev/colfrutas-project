@@ -21,17 +21,13 @@ const { title } = Astro.props;
     <!-- Preconnect font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- font berkshire -->
     <link
       href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
       rel="stylesheet"
     />
 
-    <!-- font lora -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
     <!-- rubik -->
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
@@ -41,6 +37,11 @@ const { title } = Astro.props;
     <!-- Passion One -->
     <link
       href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- kanit -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Kanit:wght@500&display=swap"
       rel="stylesheet"
     />
 
@@ -88,7 +89,9 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body>
-    <Navbar client:visible />
+    <header class="top-0 sticky z-50">
+      <Navbar client:visible />
+    </header>
     <slot />
     <Footer />
   </body>

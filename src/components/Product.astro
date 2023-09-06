@@ -18,9 +18,9 @@ import { InfoProduct } from "@utils/file";
         tipos_de_empaque,
         variedad,
       }) => (
-        <div class="bg-white border shadow-md shadow-emerald-600/20 rounded-lg py-5 relative">
-          <h2 class="text-center font-lora text-2xl text-slate-800 py-3">
-            {producto}{" "}
+        <div class="bg-white border  rounded-lg py-5">
+          <h2 class="text-center font-kanit text-2xl text-slate-800 py-3">
+            {producto}
           </h2>
 
           <img
@@ -28,36 +28,36 @@ import { InfoProduct } from "@utils/file";
             alt={producto}
             width={450}
             height={450}
-            class="col-span-2 lg:h-[320px] mx-auto w-full"
+            class="col-span-2 lg:h-[320px] mx-auto w-full object-cover"
             loading="lazy"
           />
           <div class="mx-2 font-rubik py-4">
-            <h2 class="text-slate-700">
-              <span class="font-lora text-black">Nombre cientifico: </span>
+            <h2 class="text-slate-800">
+              <span class="font-rubik text-black">Nombre cientifico: </span>
               {nombre_cientifico}
             </h2>
-            <h2 class="text-slate-700">
-              <span class="font-lora text-black">familia:</span>
+            <h2 class="text-slate-800">
+              <span class="font-rubik text-black">familia: </span>
               {familia}
             </h2>
-            <h2 class="text-slate-700">
-              <span class="font-lora text-black">Variedad: </span>
+            <h2 class="text-slate-800">
+              <span class="font-rubik text-black">Variedad: </span>
               {variedad}
             </h2>
-            <h2 class="text-slate-700">
-              <span class="font-lora text-black">Lugar de produccion: </span>
+            <h2 class="text-slate-800">
+              <span class="font-rubik text-black">Lugar de produccion: </span>
               {lugar_de_produccion}
             </h2>
-            <h2 class="text-slate-700">
-              <span class="font-lora text-black">Tipo de empaque: </span>{" "}
+            <h2 class="text-slate-800">
+              <span class="font-rubik text-black">Tipo de empaque: </span>{" "}
               {tipos_de_empaque}{" "}
             </h2>
-            <h2 class="text-slate-700">
-              <span class="font-lora text-black">Disponibilidad: </span>{" "}
+            <h2 class="text-slate-800">
+              <span class="font-rubik text-black">Disponibilidad: </span>{" "}
               {disponibilidad}{" "}
             </h2>
-            <h2 class="text-slate-700">
-              <span class="font-lora text-black">Descripcion: </span>{" "}
+            <h2 class="text-slate-800">
+              <span class="font-rubik text-black">Descripcion: </span>{" "}
               {Descripcion}{" "}
             </h2>
           </div>

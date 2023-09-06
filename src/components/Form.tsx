@@ -20,7 +20,7 @@ const Form = () => {
 	};
 	return (
 		<>
-			<h2 className="text-center font-lora text-2xl text-emerald-600 mb-16">
+			<h2 className="text-center font-kanit text-2xl text-emerald-600 mb-16">
 				O atra vez de este formulario
 			</h2>
 			<h3 className="text-center font-rubik pb-1 text-slate-800 mb-5">
