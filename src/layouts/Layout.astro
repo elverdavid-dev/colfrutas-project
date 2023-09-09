@@ -63,7 +63,7 @@ const { title } = Astro.props;
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/svg/logo.svg" type="image/x-icon" />
 
     <!-- meta google -->
     <meta
@@ -88,7 +88,7 @@ const { title } = Astro.props;
     <meta property="og:title" content={title} />
     <meta property="twitter:title" content={title} />
     <title>{title}</title>
-    <ViewTransitions fallback="swap" />
+    <ViewTransitions fallback="none" />
   </head>
   <body>
     <header class="top-0 sticky z-50">

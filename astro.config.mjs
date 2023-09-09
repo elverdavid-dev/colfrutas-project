@@ -8,4 +8,5 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
 	integrations: [tailwind(), react(), sitemap()],
 	site: "https://www.colfrutas.site/",
+	vite: { esbuild: true },
 });
