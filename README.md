@@ -6,6 +6,6 @@ Este proyecto es una página web informativa desarrollada para una compañía ex
 
 ## Author
 
-Desarrollado por : Elver David Peñate 
+Desarrollado por : <span style="color:#4f46e5; font-weight: 700">Elver David Peñate</span>
 
 Visita mi portafolio [aquí](https://elvportafolio.website)
