@@ -1,8 +1,10 @@
 ---
 import Footer from "@components/Footer.astro";
 import Navbar from "@components/Navbar";
-import { ViewTransitions } from "astro:transitions";
+
 import "../styles/globalStyles.css";
+import { ViewTransitions } from "astro:transitions";
+
 export interface Props {
   title: string;
 }
@@ -58,10 +60,10 @@ const { title } = Astro.props;
       property="twitter:image"
       content="https://www.colfrutas.site/og-colfrutas.png"
     />
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/svg/logo.svg" type="image/x-icon" />
 
     <!-- meta google -->
     <meta
@@ -86,13 +88,15 @@ const { title } = Astro.props;
     <meta property="og:title" content={title} />
     <meta property="twitter:title" content={title} />
     <title>{title}</title>
-    <ViewTransitions />
+    <ViewTransitions fallback="none" />
   </head>
   <body>
     <header class="top-0 sticky z-50">
       <Navbar client:visible />
     </header>
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

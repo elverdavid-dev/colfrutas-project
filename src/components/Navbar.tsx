@@ -12,7 +12,12 @@ const Navbar = () => {
 			<nav className="Navbar-content">
 				<div className="flex items-center justify-between px-4 lg:px-0">
 					<a href="/">
-						<img src="/logo.svg" width="50" height="50" alt="logo colfrutas" />
+						<img
+							src="/svg/logo.svg"
+							width="50"
+							height="50"
+							alt="logo colfrutas"
+						/>
 					</a>
 					<div
 						className="cursor-pointer"

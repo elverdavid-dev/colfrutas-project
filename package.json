@@ -1,32 +1,37 @@
 {
-  "name": "colfrutas_project",
-  "type": "module",
-  "version": "1.0.2",
-  "author": {
-    "name": "Elver David Peñate",
-    "url": "https://www.elvportafolio.website"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/react": "^3.0.0",
-    "@astrojs/tailwind": "^5.0.0",
-    "@biomejs/biome": "^1.1.0",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "astro": "^3.0.8",
-    "flowbite": "^1.8.1",
-    "flowbite-react": "^0.4.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hook-form": "^7.46.1",
-    "react-icons": "^4.10.1",
-    "tailwind-scrollbar": "^3.0.5",
-    "tailwindcss": "^3.3.3"
-  }
+	"name": "colfrutas_project",
+	"type": "module",
+	"version": "1.0.2",
+	"author": {
+		"name": "Elver David Peñate",
+		"url": "https://www.elvportafolio.website"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && tsc --noEmit && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.2.0",
+		"@astrojs/react": "^3.0.0",
+		"@astrojs/sitemap": "^3.0.0",
+		"@astrojs/tailwind": "^5.0.0",
+		"@types/react": "^18.2.21",
+		"@types/react-dom": "^18.2.7",
+		"astro": "^3.0.12",
+		"flowbite": "^1.8.1",
+		"flowbite-react": "^0.4.11",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.46.1",
+		"react-icons": "^4.10.1",
+		"tailwind-scrollbar": "^3.0.5",
+		"tailwindcss": "^3.3.3",
+		"typescript": "^5.2.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.1.2"
+	}
 }
